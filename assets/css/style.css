@@ -52,6 +52,7 @@
 .bg_photo > img,
 .bg_card > img {
     visibility: hidden;
+    aspect-ratio: 1/1;
 }
 
 .i_t_t {
@@ -59,6 +60,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    aspect-ratio: 3/1;
 }
 
 .it_takes_two {
