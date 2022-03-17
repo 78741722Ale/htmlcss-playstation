@@ -20,7 +20,7 @@
 
 <body>
 
-    <!-- Site Header con background image -->
+    <!-- Site Header con background image - aggiungi IMG fluid alla classe header -->
     <header class="bg_tot_header" id="site_header">
         <!-- logo superiore -->
         <div class="h_logo_upper bg_logo_upper"></div>
@@ -82,10 +82,11 @@
             </div>
         </div>
         <!-- Play Has no limits -->
-        <div class="bg_all_container container-xl container-lg container-md">
+        <div class="bg_all_container container-xl container-lg container-md container-sm">
             <div class="row gy-3 flex-wrap justify-content-center">
                 <!-- Titolo, play has no limits -->
-                <div class="col-xl-12 col-sm-12 d-flex flex-column justify-content-center text-center align-content-center flex-wrap bg_card p-5">
+                <div
+                    class="col-xl-12 col-sm-12 d-flex flex-column justify-content-center text-center align-content-center flex-wrap bg_card p-5">
                     <a href="#">Prova 1</a>
                     <h3>Prova 2</h3>
                     <p>Prova 3</p>
@@ -137,9 +138,48 @@
                             <img src="./assets/img/dualshock-4-listing-thumb.jpg" class="card-img" alt="Cabina">
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
+        <!-- sezione It takes two -->
+        <section class="img-fluid">
+            <!-- Container del Banner -->
+            <div class="bg_all_container container-xl container-lg container-md container-sm">
+                <div class="row gy-1 gx-3 row-cols-sm-auto flex-sm-wrap flex-lg-column flex-md-wrap flex-lg-wrap">
+                    <!--  Logo gioco -->
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 pt-5 pb-3">
+                        <div class="card bg_card">
+                            <img src="./assets/img/dualshock-4-listing-thumb.jpg" class="card-img" alt="Cabina">
+                        </div>
+                    </div>
+                    <!--  Titolo banner -->
+                    <div class="col-sm-12 col-lg-5 col-md-11 text-light pb-3">
+                        <h2>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Obcaecati optio velit consectetur deserunt ipsa itaque distinctio 
+                            nostrum architecto exercitationem quaerat.
+                        </h2>
+                    </div>
+                    <!--  Paragrafo -->
+                    <div class="col-sm-12 col-lg-5 col-md-11 text-light pb-3">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+                            tempore magnam temporibus rerum animi veritatis, accusantium in at
+                            iste perspiciatis numquam, officiis optio sit saepe quia fugit sed.
+                            Maxime, autem.
+                        </p>
+                    </div>
+                    <!--  Bottone acquisto -->
+                    <div class="col-sm-12 col-md-3 col-lg-3 pb-3">
+                        <a class="btn btn-danger" href="#">Prova 3</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- sezione Cards nuove uscite -->
+        <section>
+
+        </section>
     </main>
 
 

@@ -54,7 +54,16 @@
     visibility: hidden;
 }
 
+section {
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 
+.it_takes_two {
+    filter: blur(100%);
+}
 
 /* Altezze fisse (da rimuovere poi) 
 valide per versione Desktop (XXL) */
