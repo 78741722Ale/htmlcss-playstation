@@ -1,36 +1,40 @@
 /* Regola Generale */
-
 * {
     padding: 0;
     margin: 0;  
     box-sizing: border-box;
 }
 
-/* Palette colori per blocchi - header */
+
+/*#region Palette colori e Background  */
+
+/**************
+ Palette colori per blocchi - header 
+**************/
 
 .bg_tot_header {
     background-color: crimson;
     opacity: 50%;
 }
-
 .bg_logo_upper {
     background-color: chartreuse;
     opacity: 75%;
 }
-
 .bg_navbar_upper {
     background-color: chartreuse;
     opacity: 35%;
 }
-
 .bg_cont_main_header {
     background-color: #14ed87;
     opacity: 75%;
 }
-
 .bg_main {
     background-color: blanchedalmond;
     opacity: 75%;
+}
+
+.bg_ps_plus {
+    background-color: #BEBCBB;
 }
 
 /* Palette colori per blocchi - Main content */
@@ -40,20 +44,30 @@
     opacity: 75%;
 }
 
+/* Background container photo e card (da rimuovere) */
+.bg_photo {
+    background-color: blueviolet;
+}
+
 .bg_card {
     background-color: rgb(87, 178, 34);
     opacity: 75%;
 }
 
-.bg_photo {
-    background-color: blueviolet;
-}
+/*#endregion */
+
+/* Utilities per Foto e altro */
 
 .bg_photo > img,
 .bg_card > img {
     visibility: hidden;
     aspect-ratio: 1/1;
 }
+
+.it_takes_two {
+    filter: blur(100%);
+}
+/* Utilities Aspect ratio e IMG di background */
 
 .i_t_t {
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
@@ -63,8 +77,10 @@
     aspect-ratio: 3/1;
 }
 
-.it_takes_two {
-    filter: blur(100%);
+.ps_plus {
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Altezze fisse (da rimuovere poi) 
