@@ -6,4 +6,61 @@
     box-sizing: border-box;
 }
 
-/* Palette colori per blocchi - Figma */
+/* Palette colori per blocchi - header */
+
+.bg_tot_header {
+    background-color: crimson;
+    opacity: 50%;
+}
+
+.bg_logo_upper {
+    background-color: chartreuse;
+    opacity: 75%;
+}
+
+.bg_navbar_upper {
+    background-color: chartreuse;
+    opacity: 35%;
+}
+
+.bg_cont_main_header {
+    background-color: #14ed87;
+    opacity: 75%;
+}
+
+
+/* Palette colori per blocchi - Main content */
+
+
+
+
+
+/* Altezze fisse (da rimuovere poi) 
+valide per versione Desktop (XXL) */
+
+.h_xxl_header {
+    z-index: 1;
+}
+
+.h_logo_upper {
+    height: 50px;
+    z-index: 2;
+}
+
+.h_navbar_up {
+    height: 75px;
+    z-index: 2;
+}
+
+.h_cont_main_header {
+    height: 280px;
+}
+
+/* Margini e Padding */
+.mt_xxl {
+    margin-top: 23rem;
+}
+
+
+
+
