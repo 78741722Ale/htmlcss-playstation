@@ -28,12 +28,18 @@
     opacity: 75%;
 }
 
+.bg_main {
+    background-color: blanchedalmond;
+    opacity: 75%;
+}
+
 
 /* Palette colori per blocchi - Main content */
 
-
-
-
+.bg_all_container {
+    background-color: chocolate;
+    opacity: 75%;
+}
 
 /* Altezze fisse (da rimuovere poi) 
 valide per versione Desktop (XXL) */
@@ -61,6 +67,10 @@ valide per versione Desktop (XXL) */
     margin-top: 23rem;
 }
 
+.img_cards {
+
+
+}
 
 
 
