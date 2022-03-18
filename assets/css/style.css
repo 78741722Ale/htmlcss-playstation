@@ -82,8 +82,6 @@
     border-radius: 1rem;
 }
 
-
-
 .it_takes_two {
   filter: blur(100%);
 }
@@ -144,3 +142,7 @@ li > a {
   color: white;
 }
 
+/* Testo cards */
+.w_80 {
+    width: 80%;
+}
