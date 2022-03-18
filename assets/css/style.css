@@ -41,6 +41,10 @@
     background-color: #161C3B;
 }
 
+.bg_footer {
+    background-color: #00439C;
+}
+
 /* Palette colori per blocchi - Main content */
 
 .bg_all_container {
@@ -118,6 +122,15 @@ valide per versione Desktop (XXL) */
 /* Margini e Padding */
 .mt_xxl {
     margin-top: 23rem;
+}
+
+li {
+    list-style: none;
+}
+
+li > a {
+    text-decoration: none;
+    color: white;
 }
 
 
