@@ -1,10 +1,9 @@
 /* Regola Generale */
 * {
-    padding: 0;
-    margin: 0;  
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
 
 /*#region Palette colori e Background  */
 
@@ -13,127 +12,135 @@
 **************/
 
 .bg_tot_header {
-    background-color: crimson;
-    opacity: 50%;
+  background-color: crimson;
 }
 .bg_logo_upper {
-    background-color: chartreuse;
-    opacity: 75%;
+  background-color: chartreuse;
 }
 .bg_navbar_upper {
-    background-color: chartreuse;
-    opacity: 35%;
+  background-color: chartreuse;
 }
 .bg_cont_main_header {
-    background-color: #14ed87;
-    opacity: 75%;
+  background-color: #14ed87;
 }
+
 .bg_main {
-    background-color: blanchedalmond;
-    opacity: 75%;
+  background-color: blanchedalmond;
 }
-
 .bg_ps_plus {
-    background-color: #BEBCBB;
+  background-color: #bebcbb;
 }
-
 .bg_ps_now {
-    background-color: #161C3B;
+  background-color: #161c3b;
 }
-
+.bg_new_exit {
+    background-color: var(--bg_new_exit);
+}
 .bg_footer {
-    background-color: #00439C;
+  background-color: var(--bg_footer);
 }
 
 /* Palette colori per blocchi - Main content */
 
 .bg_all_container {
-    background-color: chocolate;
-    opacity: 75%;
+  background-color: chocolate;
 }
 
 /* Background container photo e card (da rimuovere) */
 .bg_photo {
-    background-color: blueviolet;
+  background-color: blueviolet;
 }
 
 .bg_card {
-    background-color: rgb(87, 178, 34);
-    opacity: 75%;
+  background-color: rgb(87, 178, 34);
+}
+
+.bg_transparent {
+    background-color: var(--bg_transparent);
 }
 
 /*#endregion */
+
+/*#region Palette colori corretta */
+:root {
+  --bg_footer: #00439c;
+  --bg_new_exit : #1F1F1F;
+  --bg_transparent : transparent;
+}
+
+/*#endregion*/
 
 /* Utilities per Foto e altro */
 
 .bg_photo > img,
 .bg_card > img {
-    visibility: hidden;
-    /* aspect-ratio: 1/1; */
+  visibility: hidden;
+  /* aspect-ratio: 1/1; */
 }
 
+.rounded_5 {
+    border-radius: 1rem;
+}
+
+
+
 .it_takes_two {
-    filter: blur(100%);
+  filter: blur(100%);
 }
 /* Utilities Aspect ratio e IMG di background */
 
 .i_t_t {
-    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    aspect-ratio: 3/1;
+  background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  aspect-ratio: 3/1;
 }
 
 .ps_plus {
-    background-size: cover;
-    max-width: 100%;
-    height: auto;
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
 }
 
 .ps_now {
-    background-size: cover;
-    max-width: 70%;
-    height: auto;
+  background-size: cover;
+  max-width: 70%;
+  height: auto;
 }
-
 
 /* Altezze fisse (da rimuovere poi) 
 valide per versione Desktop (XXL) */
 
 .h_xxl_header {
-    z-index: 1;
+  z-index: 1;
 }
 
 .h_logo_upper {
-    height: 50px;
-    z-index: 2;
+  height: 50px;
+  z-index: 2;
 }
 
 .h_navbar_up {
-    height: 75px;
-    z-index: 2;
+  height: 75px;
+  z-index: 2;
 }
 
 .h_cont_main_header {
-    height: 280px;
+  height: 280px;
 }
 
 /* Margini e Padding */
 .mt_xxl {
-    margin-top: 23rem;
+  margin-top: 23rem;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 li > a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
-
-
-
-
 
