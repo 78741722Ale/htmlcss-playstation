@@ -155,6 +155,11 @@ li > a {
   content: "\f106";
 }
 
+/* Font-size - footer  */
+  .fs_mid {
+    font-size: 0.9rem;
+  }
+
 /* Media Queries */
 
 @media screen and (max-width: 767.98px) {
@@ -171,20 +176,41 @@ li > a {
     max-width: 70%;
     height: auto;
   }
+
   /* Larghezza logo PS_now */
   .ps_now {
     max-width: 70%;
     height: auto;
   }
-
   .sie_logo {
     max-width: 70%;
     height: auto;
   }
 
-  ol, ul {
-      padding-left: 0px;
+  /* Footer */
+  ul > li {
+    padding-bottom: 0.5rem;
   }
+}
+
+/* Media Queries da 768 a 1400px (font-size) */
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  
+    /* Titoli e testi H2 generici */
+
+    .h3_md {
+        font-size: xx-large;
+    }
+    
+    /* Lista non ordinata nel footer */
+    ul > li{
+    padding-bottom: 0.5rem;
+    }
+
+    .list_md {
+        padding-left: 0px;
+    }
 
 
 }
