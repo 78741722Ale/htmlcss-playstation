@@ -5,37 +5,35 @@
   box-sizing: border-box;
 }
 
-/*#region Palette colori e Background  */
-
-/**************
- Palette colori per blocchi - header 
-**************/
-
-.bg_tot_header {
-  background-color: crimson;
-}
-.bg_logo_upper {
-  background-color: var(--bg_logo_header);
+/* Cambio Font */
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.bg_navbar_upper {
-  background-color: chartreuse;
-}
-.bg_cont_main_header {
-  background-color: #14ed87;
+
+/*#region colori e Background  */
+
+/* Root di Figma */
+:root {
+  --bg_footer: #00439c;
+  --bg_new_exit: #1f1f1f;
+  --bg_logo_header: #000000;
+  --bg_transparent: transparent;
+  --bg_ps_now: #161c3b;
+  --bg_ps_plus: #bebcbb;
 }
 
-.bg_main {
-  background-color: blanchedalmond;
+.bg_transparent {
+  background-color: var(--bg_transparent);
 }
 .bg_ps_plus {
-  background-color: #bebcbb;
+  background-color: var(--bg_ps_plus);
 }
 .bg_ps_now {
-  background-color: #161c3b;
+  background-color: var(--bg_ps_now);
 }
 .bg_new_exit {
-    background-color: var(--bg_new_exit);
+  background-color: var(--bg_new_exit);
 }
 .bg_footer {
   background-color: var(--bg_footer);
@@ -43,34 +41,31 @@
 
 /* Palette colori per blocchi - Main content */
 
+.bg_navbar_upper {
+  background-color: chartreuse;
+}
+.bg_cont_main_header {
+  background-color: #14ed87;
+}
 .bg_all_container {
   background-color: chocolate;
+}
+.bg_tot_header {
+  background-color: crimson;
+}
+.bg_logo_upper {
+  background-color: var(--bg_logo_header);
 }
 
 /* Background container photo e card (da rimuovere) */
 .bg_photo {
   background-color: blueviolet;
 }
-
 .bg_card {
   background-color: rgb(87, 178, 34);
 }
 
-.bg_transparent {
-    background-color: var(--bg_transparent);
-}
-
 /*#endregion */
-
-/*#region Palette colori corretta */
-:root {
-  --bg_footer: #00439c;
-  --bg_new_exit : #1F1F1F;
-  --bg_logo_header : #000000;
-  --bg_transparent : transparent;
-}
-
-/*#endregion*/
 
 /* Utilities per Foto e altro */
 
@@ -81,7 +76,7 @@
 }
 
 .rounded_5 {
-    border-radius: 1rem;
+  border-radius: 1rem;
 }
 
 .it_takes_two {
@@ -130,6 +125,7 @@ valide per versione Desktop (XXL) */
   margin-top: 23rem;
 }
 
+/* List Item del footer */
 li {
   list-style: none;
 }
@@ -141,5 +137,37 @@ li > a {
 
 /* Testo cards */
 .w_80 {
-    width: 80%;
+  width: 80%;
+}
+
+
+/* Dropdown della Navbar */
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-toggle::after {
+  border: none;
+  font: var(--fa-font-solid);
+  content: "\f107";
+}
+
+.dropdown-toggle.show::after {
+  content: "\f106";
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 767.98px) {
+  /* Immagine da nascondere a visualizzazione SM e rientra a MD */
+  .psp_img {
+    display: none;
+  }
+  /* Larghezza logo PS_plus */
+  .ps_plus {
+    max-width: 70%;
+    height: auto;
+  }
 }
