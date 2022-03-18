@@ -92,7 +92,7 @@ body {
 
 .ps_plus {
   background-size: cover;
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
 }
 
@@ -156,9 +156,9 @@ li > a {
 }
 
 /* Font-size - footer  */
-  .fs_mid {
-    font-size: 0.9rem;
-  }
+.fs_mid {
+  font-size: 0.9rem;
+}
 
 /* Media Queries */
 
@@ -182,6 +182,7 @@ li > a {
     max-width: 70%;
     height: auto;
   }
+
   .sie_logo {
     max-width: 70%;
     height: auto;
@@ -195,22 +196,31 @@ li > a {
 
 /* Media Queries da 768 a 1400px (font-size) */
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
-  
-    /* Titoli e testi H2 generici */
+@media screen and (min-width: 768px) {
+  /* Titoli e testi H2 generici */
 
-    .h3_md {
-        font-size: xx-large;
-    }
-    
-    /* Lista non ordinata nel footer */
-    ul > li{
+  .h2_md {
+    font-size: 2rem;
+  }
+
+  .h2_lg {
+      font-size: 2.8rem;
+  }
+
+  .p_md {
+    font-size: 1.15rem;
+    line-height: 1.6rem;
+  }
+
+  .h3_md {
+    font-size: xx-large;
+  }
+
+  /* Lista non ordinata nel footer */
+  ul > li {
     padding-bottom: 0.5rem;
-    }
-
-    .list_md {
-        padding-left: 0px;
-    }
-
-
+  }
+  .list_md {
+    padding-left: 0px;
+  }
 }
