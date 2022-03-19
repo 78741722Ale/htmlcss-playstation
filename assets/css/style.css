@@ -288,6 +288,10 @@ li > a {
     height: auto;
   }
 
+  sup {
+    font-size: 1.1rem;
+  }
+
   /* Larghezza logo PS entertainment */
   .sie_logo {
     max-width: 15%;
