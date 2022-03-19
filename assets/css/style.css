@@ -49,9 +49,7 @@ body {
 .bg_all_container {
   background-color: chocolate;
 }
-.bg_tot_header {
-  background-color: crimson;
-}
+
 .bg_logo_upper {
   background-color: var(--bg_logo_header);
 }
@@ -90,6 +88,14 @@ body {
   aspect-ratio: 3/1;
 }
 
+.returnal {
+  background-image: url(../img/jumbo-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:auto;
+  aspect-ratio: 1;
+}
+
 .ps_plus {
   background-size: cover;
   max-width: 70%;
@@ -109,14 +115,6 @@ valide per versione Desktop (XXL) */
   z-index: 1;
 }
 
-.h_navbar_up {
-  height: 75px;
-  z-index: 2;
-}
-
-.h_cont_main_header {
-  height: 280px;
-}
 
 /* Margini e Padding */
 .mt_xxl {
@@ -204,7 +202,7 @@ li > a {
   }
 
   .h2_lg {
-      font-size: 2.8rem;
+    font-size: 2.8rem;
   }
 
   .p_md {
