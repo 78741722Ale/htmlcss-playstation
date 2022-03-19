@@ -20,7 +20,7 @@ body {
   --bg_transparent: transparent;
   --bg_ps_now: #161c3b;
   --bg_ps_plus: #bebcbb;
-  --color_litegray : #818181;
+  --color_litegray: #818181;
 }
 .bg_transparent {
   background-color: var(--bg_transparent);
@@ -90,7 +90,7 @@ body {
 }
 .abs {
   position: absolute;
-  bottom : 5%;
+  bottom: 5%;
   left: 50%;
   transform: translate(-50%);
 }
@@ -160,8 +160,8 @@ li > a {
   }
 
   /* Titolo Hero Image */
-   .h1_sm {
-    font-size: 2rem;  
+  .h1_sm {
+    font-size: 2rem;
   }
   /* Titoli H2 */
   .h2_sm {
@@ -172,6 +172,7 @@ li > a {
     font-size: 1.1rem;
     line-height: 1.5rem;
   }
+
   /* Larghezza logo PS_plus */
   .ps_plus {
     max-width: 70%;
@@ -182,6 +183,13 @@ li > a {
     max-width: 70%;
     height: auto;
   }
+
+  /* Larghezza Logo Playstation nel footer */
+  .ps_foot {
+    max-width: 45%;
+    height: auto;
+  }
+
   /* Larghezza logo PS entertainment */
   .sie_logo {
     max-width: 70%;
@@ -197,14 +205,19 @@ li > a {
 
 /*#region MD - DA VISIONARE (problemi con Navbar) */
 @media screen and (min-width: 768px) {
-  
   /* Hero Image in versione 768 */
   .returnal_md {
     aspect-ratio: 1 / 1;
     object-fit: cover;
     max-width: 100%;
   }
-  
+
+   /* Larghezza Logo Playstation nel footer */
+  .ps_foot {
+    max-width: 45%;
+    height: auto;
+  }
+
   .abs {
     width: 90%;
     margin-bottom: 5%;
@@ -240,16 +253,12 @@ li > a {
 
 /*#region LG */
 @media screen and (min-width: 992px) {
-
-/* Hero Image in versione 992 */
+  /* Hero Image in versione 992 */
   .returnal_md {
     aspect-ratio: 2 / 1;
     object-fit: cover;
     max-width: 100%;
   }
-
-  /* aggiungi pos absolute da 992px */
-
   .abs {
     width: 40%;
     margin-bottom: 3%;
@@ -260,19 +269,33 @@ li > a {
   .a_lg {
     font-size: small;
   }
+  .h3_lg {
+    font-size: 1.5rem;
+  }
   .h2_lg {
     font-size: 2rem;
+  }
+  .p_lg {
+    font: 1rem;
+  }
+  .p_xs {
+    font-size: 0.9rem;
+  }
+  /* Larghezza logo PS_plus / PS_now */
+  .ps_plus,
+  .ps_now {
+    max-width: 60%;
+    height: auto;
+  }
+
+  /* Larghezza logo PS entertainment */
+  .sie_logo {
+    max-width: 15%;
+    height: auto;
   }
 
 
 
-
 }
-
-
-
-
-
-
 
 /*#endregion Media Queries */
