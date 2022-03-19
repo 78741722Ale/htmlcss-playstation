@@ -22,14 +22,14 @@
 
     <!-- SM DA NON TOCCARE -->
     <!-- Site Header con background image - aggiungi IMG fluid alla classe header -->
-    <header id="site_header">
+    <header class="pb-lg-1" id="site_header">
         <!-- logo superiore   -->
         <div class="bg_logo_upper d-flex justify-content-end align-content-center p-1">
             <img height="16" src="./assets/img/sony_logo.svg" alt="Logo sony superiore">
         </div>
         <!-- Navbar superiore -->
         <!-- Tutta da editare e sistemare -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light pt-md-0 pb-md-0">
             <div class="container-fluid">
                 <!-- Logo playstation -->
                 <a class="navbar-brand" href="#">
@@ -41,8 +41,9 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <!--  -->
+                <!-- Menu principale della Navbar -->
                 <div class="collapse navbar-collapse" id="main_navbar">
+                    <!-- /.left_menu -->
                     <ul class="left_menu navbar-nav me-auto mt-2 mt-lg-0">
                         <!--  -->
                         <li class="nav-item">
@@ -99,7 +100,7 @@
                             </div>
                         </li>
                     </ul>
-                    <!-- /.left_menu -->
+                    <!-- /.right_menu -->
                     <ul class="right_menu navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
@@ -116,22 +117,20 @@
                         <!-- /.nav-item -->
                         <li class="nav-item">
                             <i class="fa-solid fa-search fa-fw"></i>
-                            <img height="30" src="./assets/img/lens.svg" alt="">
                         </li>
-                    </ul>
-                    <!-- /.right_menu -->
+                    </ul>  
                 </div>
             </div>
         </nav>
         <!-- Hero Image -->
         <div class="rel text-light">
-            <img class="returnal returnal_sm img-fluid" src="./assets/img/jumbo-bg.png" alt="">
+            <img class="returnal returnal_sm returnal_md img-fluid" src="./assets/img/jumbo-bg.png" alt="">
             <!-- Main container dell'header -->
             <div class="abs"> 
                 <!-- Titolo H1 -->
-                <h1 class="h1_sm h1_md">Rompi il cerchio</h1>
+                <h1 class="h1_sm h1_md pb-md-3">Rompi il cerchio</h1>
                 <!-- Testo paragrafo -->
-                <p class="p_sm">
+                <p class="p_sm pb-md-3">
                     Rialzati dopo ogni sconfitta e affronta una nuova sfida con ogni rinascita in questo esplosivo
                     Thriller fantascientifico, disponibile in esclusiva su PS5.
                 </p>
@@ -143,9 +142,9 @@
 
     <!-- Site_main -->
     <main class="bg_transparent" id="site_main">
-        <!-- MD SM DA NON TOCCARE -->
+        <!-- MD , SM , LG DA NON TOCCARE -->
         <!-- Prime 6 cards superiori -->
-        <div class="bg_transparent container-fluid pt-sm-4 pb-sm-5 container-md pb-md-5 pt-md-5">
+        <div class="bg_transparent container-fluid pt-sm-4 pb-sm-5 container-md pb-md-5 pt-md-5 container-lg py-lg-4">
             <div class="row row-cols-xl-6 row-cols-lg-6 row-cols-md-3 row-cols-sm-3 gx-sm-4 gy-sm-4">
                 <!-- Card returnal -->
                 <div class="col">
@@ -192,24 +191,23 @@
             </div>
         </div>
 
-        <!-- MD SM DA NON TOCCARE -->
+        <!-- LG , MD , SM DA NON TOCCARE -->
         <!-- Sezione Play Has no limits -->
-        <div class=" container-fluid container-md pt-sm-5 pt-md-5 pb-md-5">
+        <div class="bg_transparent container-fluid container-md container-lg pt-sm-5 pt-md-5 pb-md-5 pt-lg-5">
             <div class="row row-cols-auto row-cols-sm-1 row-cols-md-1 gy-sm-4 justify-content-sm-start flex-wrap">
                 <!-- Titolo, play has no limits -->
                 <div class="col-auto">
                     <div class="text-sm-center">
-                        <a class="text-decoration-none text-uppercase" href="#">Play has no limits</a>
-                        <h2 class="pb-2 h2_sm h2_lg">Ecco la Playstation 5</h2>
-                        <p class="p_md p_sm">Tuffati in nuove possibilità di gioco completamente inaspettate.</p>
+                        <a class="text-decoration-none text-uppercase a_lg" href="#">Play has no limits</a>
+                        <h2 class="pb-2 h2_sm h2_md h2_lg">Ecco la Playstation 5</h2>
+                        <p class="p_md p_sm text_lite">Tuffati in nuove possibilità di gioco completamente inaspettate.</p>
                     </div>
                 </div>
                 <!-- Sezione SX - Console e maggiori info -->
-                <div class="col col-sm-10 col-md-5 justify-content-sm-start d-flex flex-column align-content-sm-center">
-                    <div class="card-body px-sm-0">
+                <div class="col col-sm-10 col-md-5 justify-content-sm-start justify-content-md-center flex-md-column align-content-md-center d-flex flex-column align-content-sm-center">
+                    <div class="card-body px-sm-0 flex-md-grow-0">
                         <h3 class="card-title h3_md pb-md-3">Console Playstation 5</h3>
-                        <p class="card-text p_sm p_md pb-md-3">Sperimenta la nuova generazione di incredibili giochi
-                            Playstation</p>
+                        <p class="card-text text_lite p_sm p_md pb-md-3">Sperimenta la nuova generazione di incredibili giochi Playstation</p>
                         <a href="#" class="btn btn-primary rounded-pill">Maggiori Informazioni</a>
                     </div>
                 </div>
@@ -218,7 +216,7 @@
                     <img src="./assets/img/playstation-5-thumb.png" class="img-fluid" alt="Play 5">
                 </div>
                 <!-- 5 cards inferiori (aggiungi una card body) -->
-                <div class="row gy-sm-2 row-cols-sm-3 pb-sm-3 row-cols-md-6 gx-md-2 pb-md-5 justify-content-md-around">
+                <div class="row row-cols-sm-3 row-cols-md-6 row-cols-lg-8 gy-sm-2 gx-md-2 gx-lg-3 pb-lg-1 pb-md-5 pb-sm-3 justify-content-md-around">
                     <!-- Card Console -->
                     <div class="col">
                         <div class="card bg_transparent border-0">
@@ -254,23 +252,23 @@
         </div>
 
         <!-- sezione It takes two -->
-        <!-- MD SM DA NON TOCCARE -->
+        <!-- LG MD SM DA NON TOCCARE -->
         <section class="i_t_t img-fluid pb-sm-5 pb-md-4">
             <!-- Container del Banner -->
-            <div class="container-fluid container-md">
-                <div class="row flex-sm-wrap text-light">
+            <div class="container-fluid container-md container-lg">
+                <div class="row row-cols-lg-1 flex-sm-wrap flex-lg-column text-light">
                     <!--  Logo gioco -->
-                    <div class="col-sm-7 col-md-7 pt-sm-5 pt-md-3 pb-md-4">
+                    <div class="col-sm-7 col-md-7 col-lg-3 pt-sm-5 pt-md-3 pb-md-4">
                         <div class="card bg_transparent border-0">
                             <img src="./assets/img/it-takes-two-logo.png" class="card-img" alt="Play 5 card">
                         </div>
                     </div>
                     <!--  Titolo banner -->
-                    <div class="col-sm-12 col-md-11 pb-sm-3 pb-md-3">
+                    <div class="col-sm-12 col-md-11 col-lg-4 pb-sm-3 pb-md-3">
                         <h2 class="h2_sm h2_md"> Un'avventura cooperativa selvaggia ti attende </h2>
                     </div>
                     <!--  Paragrafo -->
-                    <div class="col-sm-12 col-md-11 text-light pb-sm-3 pb-md-2">
+                    <div class="col-sm-12 col-md-11 col-lg-5 text-light pb-sm-3 pb-md-2">
                         <p>
                             Trova un amico e partite insieme per l'avventura più folle della vostra vita
                             in It Takes Two, un gioco d'avventura cooperativa a piattaforme che stravolge
