@@ -1,18 +1,18 @@
-/* Regola Generale */
+/*#region Regole Body */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-/* Cambio Font */
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/*#endregion*/
+
 /*#region colori e Background  */
 
-/* Root di Figma */
 :root {
   --bg_footer: #00439c;
   --bg_new_exit: #1f1f1f;
@@ -21,7 +21,6 @@ body {
   --bg_ps_now: #161c3b;
   --bg_ps_plus: #bebcbb;
 }
-
 .bg_transparent {
   background-color: var(--bg_transparent);
 }
@@ -37,49 +36,11 @@ body {
 .bg_footer {
   background-color: var(--bg_footer);
 }
-
-/* Palette colori per blocchi - Main content */
-
-.bg_navbar_upper {
-  background-color: chartreuse;
-}
-.bg_cont_main_header {
-  background-color: #14ed87;
-}
-.bg_all_container {
-  background-color: chocolate;
-}
-
 .bg_logo_upper {
   background-color: var(--bg_logo_header);
 }
 
-/* Background container photo e card (da rimuovere) */
-.bg_photo {
-  background-color: blueviolet;
-}
-.bg_card {
-  background-color: rgb(87, 178, 34);
-}
-
-/*#endregion */
-
-/* Utilities per Foto e altro */
-
-.bg_photo > img,
-.bg_card > img {
-  visibility: hidden;
-  /* aspect-ratio: 1/1; */
-}
-
-.rounded_5 {
-  border-radius: 1rem;
-}
-
-.it_takes_two {
-  filter: blur(100%);
-}
-/* Utilities Aspect ratio e IMG di background */
+/* Background Sezione It Takes Two */
 .i_t_t {
   background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
   background-size: cover;
@@ -87,48 +48,40 @@ body {
   background-position: center center;
   aspect-ratio: 3/1;
 }
-
+/* Background Hero Image */
 .returnal {
   background-image: url(../img/jumbo-bg.png);
-  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size:auto;
-  aspect-ratio: 1;
+  background-position: center center;
+  aspect-ratio: 1/1;
 }
 
+/* Logo PS_Plus */
 .ps_plus {
   background-size: cover;
   max-width: 70%;
   height: auto;
 }
 
+/* Logo PS_Now */
 .ps_now {
   background-size: cover;
   max-width: 70%;
   height: auto;
 }
+/*#endregion */
 
-/* Altezze fisse (da rimuovere poi) 
-valide per versione Desktop (XXL) */
+/*#region Utilities */
 
-.h_xxl_header {
-  z-index: 1;
+/* Raccordi Foto*/
+.rounded_5 {
+  border-radius: 1rem;
 }
 
-
-/* Margini e Padding */
+/* Margine Testo Hero Image*/
 .mt_xxl {
   margin-top: 23rem;
-}
-
-/* List Item del footer */
-li {
-  list-style: none;
-}
-
-li > a {
-  text-decoration: none;
-  color: white;
 }
 
 /* Testo cards */
@@ -137,29 +90,39 @@ li > a {
 }
 
 /* Dropdown della Navbar */
-
 .dropdown-toggle {
   display: flex;
   align-items: center;
 }
-
 .dropdown-toggle::after {
   border: none;
   font: var(--fa-font-solid);
   content: "\f107";
 }
-
 .dropdown-toggle.show::after {
   content: "\f106";
 }
 
+/*************
+FOOTER
+**************/
 /* Font-size - footer  */
 .fs_mid {
   font-size: 0.9rem;
 }
+/* List Item del footer */
+li {
+  list-style: none;
+}
+li > a {
+  text-decoration: none;
+  color: white;
+}
 
-/* Media Queries */
 
+/*#region Media Queries */
+
+/*#region XS/SM - CONCLUSA */
 @media screen and (max-width: 767.98px) {
   /* Immagine da nascondere a visualizzazione SM e rientra a MD */
   .psp_img {
@@ -169,18 +132,31 @@ li > a {
     display: none;
   }
 
+  /* Titolo Hero Image */
+   .h1_sm {
+    font-size: 2rem;  
+  }
+  /* Titoli H2 */
+  .h2_sm {
+    font-size: 2.5rem;
+  }
+
+  .p_sm {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+
   /* Larghezza logo PS_plus */
   .ps_plus {
     max-width: 70%;
     height: auto;
   }
-
   /* Larghezza logo PS_now */
   .ps_now {
     max-width: 70%;
     height: auto;
   }
-
+  /* Larghezza logo PS entertainment */
   .sie_logo {
     max-width: 70%;
     height: auto;
@@ -191,27 +167,28 @@ li > a {
     padding-bottom: 0.5rem;
   }
 }
+/*#endregion*/
 
-/* Media Queries da 768 a 1400px (font-size) */
-
+/*#region MD - DA VISIONARE */
 @media screen and (min-width: 768px) {
-  /* Titoli e testi H2 generici */
-
+  /* Titoli generici */
+  .h1_md {
+    font-size: 3rem;
+  }
   .h2_md {
     font-size: 2rem;
   }
-
   .h2_lg {
     font-size: 2.8rem;
   }
+  .h3_md {
+    font-size: xx-large;
+  }
 
+  /* Testi paragrafi */
   .p_md {
     font-size: 1.15rem;
     line-height: 1.6rem;
-  }
-
-  .h3_md {
-    font-size: xx-large;
   }
 
   /* Lista non ordinata nel footer */
@@ -222,3 +199,6 @@ li > a {
     padding-left: 0px;
   }
 }
+/*#endregion*/
+
+/*#endregion Media Queries */

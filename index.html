@@ -20,8 +20,9 @@
 
 <body>
 
+    <!-- SM DA NON TOCCARE -->
     <!-- Site Header con background image - aggiungi IMG fluid alla classe header -->
-    <header class="returnal img-fluid" id="site_header">
+    <header class="returnal img-fluid mx-auto" id="site_header">
         <!-- logo superiore -->
         <div class="bg_logo_upper d-flex justify-content-end align-content-center p-1">
             <img height="16" src="./assets/img/sony_logo.svg" alt="Logo sony superiore">
@@ -123,10 +124,23 @@
             </div>
         </nav>
         <!-- Main container dell'header -->
-        <div class="container mt_xxl container-xl container-md bg_cont_main_header p-5">
-            <div class="row row-cols-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 flex-column flex-wrap ">
-                <div class="col">A</div>
-                <div class="col">B</div>
+        <div class="container-fluid mt_xxl">
+            <div class="row text-light row-cols-sm-1 gy-sm-4 ">
+                <!-- Titolo H1 -->
+                <div class="col">
+                    <h1 class="h1_sm h1_md">Rompi il cerchio</h1>
+                </div>
+                <!-- Testo paragrafo -->
+                <div class="col">
+                    <p class="p_sm">
+                        Rialzati dopo ogni sconfitta e affronta una nuova sfida con ogni rinascita in questo esplosivo
+                        Thriller fantascientifico, disponibile in esclusiva su PS5.
+                    </p>
+                </div>
+                <!-- Button -->
+                <div class="col-sm-5 pb-sm-5">
+                    <a href="#" class="btn btn-danger rounded-pill">Acquista ora</a>
+                </div>
             </div>
         </div>
     </header>
@@ -135,7 +149,7 @@
     <main class="bg_transparent" id="site_main">
         <!-- MD SM DA NON TOCCARE -->
         <!-- Prime 6 cards superiori -->
-        <div class="bg_transparent container-sm pt-sm-3 pb-sm-5 container-md pb-md-5 pt-md-5">
+        <div class="bg_transparent container-fluid pt-sm-4 pb-sm-5 container-md pb-md-5 pt-md-5">
             <div class="row row-cols-xl-6 row-cols-lg-6 row-cols-md-3 row-cols-sm-3 gx-sm-4 gy-sm-4">
                 <!-- Card returnal -->
                 <div class="col">
@@ -184,23 +198,25 @@
 
         <!-- MD SM DA NON TOCCARE -->
         <!-- Sezione Play Has no limits -->
-        <div class="container-xl container-lg container-md container-sm pt-md-5 pb-md-5">
-            <div class="row row-cols-sm-1 row-cols-md-1 gy-sm-4 justify-content-sm-start flex-wrap">
+        <div class=" container-fluid container-md pt-sm-5 pt-md-5 pb-md-5">
+            <div class="row row-cols-auto row-cols-sm-1 row-cols-md-1 gy-sm-4 justify-content-sm-start flex-wrap">
                 <!-- Titolo, play has no limits -->
-                <div class="text-sm-center">
-                    <a class="text-decoration-none text-uppercase" href="#">Play has no limits</a>
-                    <h2 class="pb-2 h2_lg">Ecco la Playstation 5</h2>
-                    <p class="p_md">Tuffati in nuove possibilità di gioco completamente inaspettate.</p>
+                <div class="col-auto">
+                    <div class="text-sm-center">
+                        <a class="text-decoration-none text-uppercase" href="#">Play has no limits</a>
+                        <h2 class="pb-2 h2_sm h2_lg">Ecco la Playstation 5</h2>
+                        <p class="p_md p_sm">Tuffati in nuove possibilità di gioco completamente inaspettate.</p>
+                    </div>
                 </div>
                 <!-- Sezione SX - Console e maggiori info -->
-                <div class="col col-md-5 justify-content-sm-start d-flex flex-column align-content-sm-center">
-                    <div class="card-body">
+                <div class="col col-sm-10 col-md-5 justify-content-sm-start d-flex flex-column align-content-sm-center">
+                    <div class="card-body px-sm-0">
                         <h3 class="card-title h3_md pb-md-3">Console Playstation 5</h3>
-                        <p class="card-text p_md pb-md-3">Sperimenta la nuova generazione di incredibili giochi playstation</p>
+                        <p class="card-text p_sm p_md pb-md-3">Sperimenta la nuova generazione di incredibili giochi Playstation</p>
                         <a href="#" class="btn btn-primary rounded-pill">Maggiori Informazioni</a>
                     </div>
                 </div>
-                <!-- Foto PS5 - ora è invisibile -->
+                <!-- Foto PS5  -->
                 <div class="col col-md-7">
                     <img src="./assets/img/playstation-5-thumb.png" class="img-fluid" alt="Play 5">
                 </div>
@@ -244,7 +260,7 @@
         <!-- MD SM DA NON TOCCARE -->
         <section class="i_t_t img-fluid pb-sm-5 pb-md-4">
             <!-- Container del Banner -->
-            <div class="container-sm container-md">
+            <div class="container-fluid container-md">
                 <div class="row flex-sm-wrap text-light">
                     <!--  Logo gioco -->
                     <div class="col-sm-7 col-md-7 pt-sm-5 pt-md-3 pb-md-4">
@@ -254,7 +270,7 @@
                     </div>
                     <!--  Titolo banner -->
                     <div class="col-sm-12 col-md-11 pb-sm-3 pb-md-3">
-                        <h2 class="h2_md"> Un'avventura cooperativa selvaggia ti attende </h2>
+                        <h2 class="h2_sm h2_md"> Un'avventura cooperativa selvaggia ti attende </h2>
                     </div>
                     <!--  Paragrafo -->
                     <div class="col-sm-12 col-md-11 text-light pb-sm-3 pb-md-2">
@@ -275,7 +291,7 @@
         <!-- sezione Cards nuove uscite -->
         <!-- MD SM DA NON TOCCARE -->
         <section class="bg_new_exit text-light">
-            <div class="container-sm pb-sm-5 pb-md-5 pt-md-3">
+            <div class="container-fluid pb-sm-5 pb-md-5 pt-md-3">
                 <div class="row row-cols-sm-3 row-cols-md-3 gy-sm-4 gx-sm-3 gx-md-3 flex-sm-wrap">
                     <!-- Titolo section -->
                     <div class="col-sm-12 col-md-12 pb-sm-3 pb-md-1">
@@ -408,18 +424,17 @@
 
         <!-- Sezione Esplora prodotti -->
         <!-- MD SM DA NON TOCCARE -->
-        <section class="bg_transparent text-sm-center container-sm container-md pb-sm-5 pb-md-3">
-            <!-- Titolo sezione e testo -->
-            <div class="pt-sm-5 pb-sm-5">
-                <h2 class="h2_lg pt-md-5">Esplora Playstation® 4 </h2>
-                <!-- sottotitolo -->
-                <p class="p_md"> 
-                    Giochi incredibili e intrattenimento senza fine. 
-                    Non c'è mai stato un momento migliore per giocaresulla tua PS4. 
-                </p>
-            </div>
-            <!-- Titolo della sezione , esplora  -->
+        <section class="bg_transparent text-sm-center container-fluid container-md pb-sm-5 pb-md-3">
             <div class="row row-cols-sm-1 row-cols-md-3 pb-sm-5 gy-sm-5 gx-md-3 flex-sm-wrap flex-md-wrap">
+                <!-- Titolo sezione e testo -->
+                <div class="pt-sm-5 pb-sm-4">
+                    <h2 class="h2_sm h2_lg pt-md-5">Esplora Playstation® 4 </h2>
+                    <!-- sottotitolo -->
+                    <p class="p_sm p_md">
+                        Giochi incredibili e intrattenimento senza fine.
+                        Non c'è mai stato un momento migliore per giocaresulla tua PS4.
+                    </p>
+                </div>
                 <!-- 1°card - PS4 -->
                 <div class="col-sm-12 col-md-4 justify-content-sm-start col-md-4">
                     <div class="card border-0 bg_transparent">
@@ -465,7 +480,7 @@
         <!-- Sezione Playstation plus -->
         <!-- MD SM DA NON TOCCARE -->
         <section class="bg_ps_plus pt-sm-5 pb-sm-5 pb-md-0 pt-md-0 mb-3 ">
-            <div class="container container-sm container-md">
+            <div class="container-fluid container-md">
                 <div class="row row-cols-xl-2 row-cols-lg-2 row-cols-md-2 flex-sm-column flex-md-row flex-lg-row flex-xl-row">
                     <!-- Playstation plus -->
                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex align-content-center flex-grow-0 flex-wrap flex-lg-row">
@@ -493,15 +508,15 @@
 
         <!-- Sezione Nuovi Sconti -->
         <!-- MD SM DA NON TOCCARE -->
-        <section class="pt-sm-5 pb-sm-5 container-sm pt-md-4 pb-md-4 container-md">
+        <section class="pt-sm-5 pb-sm-5 container-fluid pt-md-4 pb-md-4 container-md">
             <div class="row row-cols-sm-1 row-cols-md-3 gy-sm-5 gy-md-4 gx-md-3 flex-sm-wrap">
                 <!-- Titolo sezione e testo -->
                 <div class="col-sm-12 col-md-12 text-center">
                     <!-- title -->
-                    <h2 class="h2_md">Nuovi sconti sul playstation store.</h2>
+                    <h2 class="h2_sm h2_md">Nuovi sconti sul playstation store.</h2>
                     <!-- sottotitolo -->
-                    <p class="p_md"> Sconti pazzeschi, collezioni curate e saldi giornalieri su PS5,
-                        PS4 e PS VR, tutti in un unico posto.
+                    <p class="p_sm p_md"> Sconti pazzeschi, collezioni curate e saldi giornalieri 
+                        su PS5, PS4 e PS VR, tutti in un unico posto.
                     </p>
                 </div>
                 <!-- 1°card - Giochi a meno -->
@@ -531,7 +546,7 @@
         <!-- Sezione Playstation now -->
         <!-- MD SM DA NON TOCCARE -->
         <section class="bg_ps_now pt-sm-5 pb-sm-5 pb-md-0 pt-md-0 mb-3">
-            <div class="container container-sm container-md">
+            <div class="container-fluid container-md">
                 <div class="row row-cols-xl-2 row-cols-lg-2 row-cols-md-2 flex-sm-column flex-md-row flex-lg-row flex-xl-row">
                     <!-- Playstation Now -->
                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex align-content-center flex-grow-0 flex-wrap flex-lg-row">
@@ -559,7 +574,7 @@
 
         <!-- Sezione Social media -->
         <!-- MD SM DA NON TOCCARE -->
-        <section class="container-sm container-md pt-sm-5 pt-md-4 pb-sm-5">
+        <section class="container-fluid container-md pt-sm-5 pt-md-4 pb-sm-5">
             <div class="row row-cols-sm-4 row-cols-md-4 gx-sm-3 gx-md-4 flex-wrap p-2 pb-3 pb-sm-5 justify-content-sm-between">
                 <div class="col-sm-12 col-md-12 col-lg-12 pt-sm-2 pb-sm-4 pb-md-5 pt-md-4 text-center">
                     <h3 class="h3_md">Seguici sui social Media </h3>
@@ -596,7 +611,7 @@
     <!-- MD SM DA NON TOCCARE -->
     <footer class="bg_footer" id="site_footer">
         <!-- Container principale -->
-        <div class="container-sm pb-sm-3 container-md">
+        <div class="container-fluid pb-sm-3 container-md">
             <div class="row row-cols-sm-1 row-cols-md-1 flex-md-column flex-sm-column py-sm-5 gy-sm-2">
                 <!-- Logo play -->
                 <div class="col-sm-3 col-md-2 pb-md-3">
@@ -643,7 +658,7 @@
                     </div>
                 </div>
                 <!--  Testo Copyright -->
-                <div class="col text-light pb-sm-5 pb-md-5 fs_mid">
+                <div class="col text-light pb-sm-3 pb-md-5 fs_mid">
                     <p>
                         Website ©2022 Sony Interactive Entertainment Europe Limited. Tutti i contenuti, nomi dei giochi,
                         nomi commerciali
@@ -659,8 +674,7 @@
 
     <!-- Link a Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"> </script>
 </body>
 
 </html>
