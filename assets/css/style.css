@@ -203,7 +203,7 @@ li > a {
 }
 /*#endregion*/
 
-/*#region MD - DA VISIONARE (problemi con Navbar) */
+/*#region MD - CONCLUSA */
 @media screen and (min-width: 768px) {
   /* Hero Image in versione 768 */
   .returnal_md {
@@ -251,10 +251,10 @@ li > a {
 }
 /*#endregion*/
 
-/*#region LG */
+/*#region LG/XL - CONCLUSA */
 @media screen and (min-width: 992px) {
   /* Hero Image in versione 992 */
-  .returnal_md {
+  .returnal_xl {
     aspect-ratio: 2 / 1;
     object-fit: cover;
     max-width: 100%;
@@ -298,8 +298,13 @@ li > a {
     height: auto;
   }
 
-
-
 }
+/*#endregion */
 
 /*#endregion Media Queries */
+
+/*#region Effetti */
+
+/*#endregion*/
+
+
