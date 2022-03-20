@@ -139,7 +139,13 @@ li > a {
 
 /*#region Media Queries */
 
-/*#region XS/SM - CONCLUSA */
+/*#region XS -  */
+@media screen and (max-width: 575.98px) {
+}
+
+/*#endregion*/
+
+/*#region SM - CONCLUSA */
 @media screen and (max-width: 767.98px) {
   /* Aspect Ratio SM della HeroImage */
   .returnal_sm {
@@ -212,7 +218,7 @@ li > a {
     max-width: 100%;
   }
 
-   /* Larghezza Logo Playstation nel footer */
+  /* Larghezza Logo Playstation nel footer */
   .ps_foot {
     max-width: 45%;
     height: auto;
@@ -297,7 +303,6 @@ li > a {
     max-width: 15%;
     height: auto;
   }
-
 }
 /*#endregion */
 
@@ -305,6 +310,5 @@ li > a {
 
 /*#region Effetti */
 
+
 /*#endregion*/
-
-
