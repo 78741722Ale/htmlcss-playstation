@@ -139,12 +139,6 @@ li > a {
 
 /*#region Media Queries */
 
-/*#region XS -  */
-@media screen and (max-width: 575.98px) {
-}
-
-/*#endregion*/
-
 /*#region SM - CONCLUSA */
 @media screen and (max-width: 767.98px) {
   /* Aspect Ratio SM della HeroImage */
