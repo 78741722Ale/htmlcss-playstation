@@ -139,7 +139,6 @@ li > a {
 
 /*#region Media Queries */
 
-
 /*#region SM - CONCLUSA */
 @media screen and (max-width: 767.98px) {
   /* Aspect Ratio SM della HeroImage */
@@ -148,6 +147,11 @@ li > a {
     object-fit: cover;
     max-width: 100%;
   }
+  /* Testo cards playstation */
+  .item_text {
+    display: none;
+  }
+
   /* Testo nella Hero Image */
   .abs {
     width: 95%;
@@ -167,6 +171,9 @@ li > a {
   /* Titoli H2 */
   .h2_sm {
     font-size: 2.5rem;
+  }
+  .h3_sm {
+    font-size: 2rem;
   }
   /* Paragrafi */
   .p_sm {
@@ -227,7 +234,7 @@ li > a {
   /* Testo delle Cards playstation Item */
   .item_text {
     display: block;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
   /* Titoli generici */
@@ -266,6 +273,11 @@ li > a {
     object-fit: cover;
     max-width: 100%;
   }
+
+  .fs_small {
+    font-size: 0.75rem;
+  }
+
   .abs {
     width: 40%;
     margin-bottom: 3%;
@@ -327,29 +339,25 @@ li > a {
 /* Effetti cards dispositivi Sony */
 
 .border_under_visible {
-  border-width: 0px 0px 5px 0px;
+  border-width: 0px 0px 3px 0px;
   border-color: #0d6efd;
   padding: 0.65rem;
 }
-
 .border_under {
-  border-width: 0px 0px 5px 0px;
+  border-width: 0px 0px 3px 0px;
   border-color: transparent;
   padding: 0.65rem;
 }
-
-.cons_item, 
+.cons_item,
 .item_text {
   filter: opacity(50%);
 }
-
-.cons_item:hover {
+.cons_item:hover,
+.border_under:hover {
   filter: opacity(100%);
 }
-
 .border_under:hover {
   border-color: #0d6efd;
-  filter: opacity(100%);
 }
 
 /* Bottoni Primari - effetto outline */
