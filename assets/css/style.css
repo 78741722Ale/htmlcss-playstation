@@ -83,6 +83,11 @@ body {
   margin-top: 23rem;
 }
 
+ /* Lista non ordinata nel footer */
+  .pb_mid_rem {
+    padding-bottom: 0.5rem;
+  }
+
 /* Posizioni */
 .rel {
   position: relative;
@@ -141,6 +146,11 @@ li > a {
 
 /*#region SM - CONCLUSA */
 @media screen and (max-width: 767.98px) {
+  
+  .nav-item i {
+    display: none;
+  }
+  
   /* Aspect Ratio SM della HeroImage */
   .returnal_sm {
     aspect-ratio: 1 / 1;
@@ -151,7 +161,6 @@ li > a {
   .item_text {
     display: none;
   }
-
   /* Testo nella Hero Image */
   .abs {
     width: 95%;
@@ -163,7 +172,6 @@ li > a {
   .psn_img {
     display: none;
   }
-
   /* Titolo Hero Image */
   .h1_sm {
     font-size: 2rem;
@@ -180,7 +188,6 @@ li > a {
     font-size: 1.1rem;
     line-height: 1.5rem;
   }
-
   /* Larghezza logo PS_plus */
   .ps_plus {
     max-width: 70%;
@@ -191,19 +198,16 @@ li > a {
     max-width: 70%;
     height: auto;
   }
-
   /* Larghezza Logo Playstation nel footer */
   .ps_foot {
     max-width: 45%;
     height: auto;
   }
-
   /* Larghezza logo PS entertainment */
   .sie_logo {
     max-width: 70%;
     height: auto;
   }
-
   /* Footer */
   ul > li {
     padding-bottom: 0.5rem;
@@ -213,6 +217,10 @@ li > a {
 
 /*#region MD - CONCLUSA */
 @media screen and (min-width: 768px) {
+  .nav-item i {
+    display: none;
+  }
+  
   /* Hero Image in versione 768 */
   .returnal_md {
     aspect-ratio: 1 / 1;
@@ -255,10 +263,6 @@ li > a {
     line-height: 1.6rem;
   }
 
-  /* Lista non ordinata nel footer */
-  ul > li {
-    padding-bottom: 0.5rem;
-  }
   .list_md {
     padding-left: 0px;
   }
@@ -267,6 +271,12 @@ li > a {
 
 /*#region LG/XL - CONCLUSA */
 @media screen and (min-width: 992px) {
+  
+  /* Ricerca nella navbar */
+  .nav-item i {
+    display: block;
+  }
+  
   /* Hero Image in versione 992 */
   .returnal_xl {
     aspect-ratio: 2 / 1;
@@ -321,7 +331,7 @@ li > a {
 
 /*#endregion Media Queries */
 
-/*#region Effetti - COMPLETI */
+/*#region Effetti */
 
 /* Effetti cards slider */
 

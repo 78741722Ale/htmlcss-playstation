@@ -5,114 +5,222 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- link a Font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Link a Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- link a foglio style.css -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- link a Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Titolo pagina -->
     <title>HTML/CSS - Riproduzione sito PS5</title>
 </head>
 <body>
 
-    <!-- Site Header con background image - aggiungi IMG fluid alla classe header -->
     <header class="pb-lg-1" id="site_header">
         <!-- logo superiore   -->
         <div class="bg_logo_upper d-flex justify-content-end align-content-center p-1">
             <img height="16" src="./assets/img/sony_logo.svg" alt="Logo sony superiore">
         </div>
         <!-- Navbar superiore -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light pt-md-0 pb-md-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
             <div class="container-fluid">
                 <!-- Logo playstation -->
                 <a class="navbar-brand" href="#">
                     <img src="./assets/img/play_logo.svg" alt="Logo playstation">
                 </a>
-                <!--  -->
+                <!-- Pulsante Hamburger -->
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#main_navbar" aria-controls="main_navbar" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- Menu principale della Navbar -->
-                <div class="collapse navbar-collapse" id="">
-                    <!-- /.left_menu -->
+                <div class="collapse navbar-collapse" id="main_navbar">
+                    <!-- Menu Sinistra -->
                     <ul class="left_menu navbar-nav me-auto mt-2 mt-lg-0">
-                        <!--  -->
+                        <!-- Giochi (tutte cards crash) -->
                         <li class="nav-item">
-                            <a class="nav-link dropdown-toggle" href="#" id="" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">Giochi</a>
-                            <div class="dropdown-menu w-100" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="#">Giochi 1</a>
-                                <a class="dropdown-item" href="#">Action 2</a>
+                            <div class="dropdown-menu w-100 " aria-labelledby="dropdownId">
+                                <div class="row row-cols-3 gx-sm-3 gx-md-3 gx-lg-2 px-lg-2 d-flex align-content-center justify-content-center justify-content-lg-start">
+                                    <!-- Card-1 - Crash -->
+                                    <div class="col-sm-3 col-md-2 col-lg-2">
+                                        <div class="card">
+                                            <img class="img-fluid" src="./assets/img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- Card-2 - Crash -->
+                                    <div class="col-sm-3 col-md-2 col-lg-2">
+                                        <div class="card">
+                                            <img class="img-fluid" src="./assets/img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- Card-3 - Crash -->
+                                    <div class="col-sm-3 col-md-2 col-lg-2">
+                                        <div class="card">
+                                            <img class="img-fluid" src="./assets/img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </li>
-                        <!--  -->
+                        <!-- Hardware (tutti dualshock) -->
                         <li class="nav-item">
-                            <a class="nav-link dropdown-toggle" href="#" id="" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">Hardware</a>
-                            <div class="dropdown-menu w-100" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="#">Hardware 1</a>
-                                <a class="dropdown-item" href="#">Action 2</a>
+                            <div class="dropdown-menu w-100 " aria-labelledby="dropdownId">
+                                <div class="row row-cols-3 gx-sm-3 gx-md-3 gx-lg-2 px-lg-2 d-flex align-content-center justify-content-center justify-content-lg-start">
+                                    <!-- Card-1 - Joypad -->
+                                    <div class="col-sm-3 col-md-2 col-lg-2">
+                                        <div class="card">
+                                            <img class="img-fluid" src="./assets/img/dualshock-4-listing-thumb.jpg" alt="Dualshock">
+                                        </div>
+                                    </div>
+                                    <!-- Card-2 - Joypad -->
+                                    <div class="col-sm-3 col-md-2 col-lg-2">
+                                        <div class="card">
+                                        <img class="img-fluid" src="./assets/img/dualshock-4-listing-thumb.jpg" alt="Dualshock">
+                                        </div>
+                                    </div>
+                                    <!-- Card-3 - Joypad-->
+                                    <div class="col-sm-3 col-md-2 col-lg-2">
+                                        <div class="card">
+                                            <img class="img-fluid" src="./assets/img/dualshock-4-listing-thumb.jpg" alt="Dualshock">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </li>
-                        <!--  -->
+                        <!-- Servizi (tutti giochi a meno) -->
                         <li class="nav-item">
-                            <a class="nav-link dropdown-toggle" href="#" id="" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">Servizi</a>
-                            <div class="dropdown-menu w-100" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="#">Servizi 1</a>
-                                <a class="dropdown-item" href="#">Action 2</a>
+                            <div class="dropdown-menu w-100 " aria-labelledby="dropdownId">
+                                <div class="row row-cols-3 gx-sm-3 gx-md-3 gx-lg-2 px-lg-2 d-flex align-content-center justify-content-center justify-content-lg-start">
+                                    <!-- Card-1 - Giochi a Meno -->
+                                    <div class="col-sm-3 col-md-2 col-lg-2">
+                                        <div class="card">
+                                            <img class="img-fluid" src="./assets/img/playstation-store-games-under-20-spotlight.jpg" alt="Sconti">
+                                        </div>
+                                    </div>
+                                    <!-- Card-2 - Giochi a Meno -->
+                                    <div class="col-sm-3 col-md-2 col-lg-2">
+                                        <div class="card">
+                                            <img class="img-fluid" src="./assets/img/playstation-store-games-under-20-spotlight.jpg" alt="Sconti">
+                                        </div>
+                                    </div>
+                                    <!-- Card-3 - Giochi a Meno -->
+                                    <div class="col-sm-3 col-md-2 col-lg-2">
+                                        <div class="card">
+                                            <img class="img-fluid" src="./assets/img/playstation-store-games-under-20-spotlight.jpg" alt="Sconti">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </li>
-                        <!--  -->
+                        <!-- Novità - (tutti sconti Mese aprile) -->
                         <li class="nav-item">
-                            <a class="nav-link dropdown-toggle" href="#" id="" data-bs-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Novita</a>
-                            <div class="dropdown-menu w-100" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="#">Novitá 1</a>
-                                <a class="dropdown-item" href="#">Action 2</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Novità</a>
+                            <div class="dropdown-menu w-100 " aria-labelledby="dropdownId">
+                                <div class="row row-cols-3 gx-sm-3 gx-md-3 gx-lg-2 px-lg-2 d-flex align-content-center justify-content-center justify-content-lg-start">
+                                    <!-- Card-1 - Giochi a Meno -->
+                                    <div class="col-sm-3 col-md-2 col-lg-2">
+                                        <div class="card">
+                                            <img class="img-fluid" src="./assets/img/ps-plus-april-monthly-games-featured-image-block.png" alt="Aprile">
+                                        </div>
+                                    </div>
+                                    <!-- Card-2 - Giochi a Meno -->
+                                    <div class="col-sm-3 col-md-2 col-lg-2">
+                                        <div class="card">
+                                            <img class="img-fluid" src="./assets/img/ps-plus-april-monthly-games-featured-image-block.png" alt="Aprile">
+                                        </div>
+                                    </div>
+                                    <!-- Card-3 - Giochi a Meno -->
+                                    <div class="col-sm-3 col-md-2 col-lg-2">
+                                        <div class="card">
+                                            <img class="img-fluid" src="./assets/img/ps-plus-april-monthly-games-featured-image-block.png" alt="Aprile">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </li>
-                        <!--  -->
+                        <!-- Acquisti (tutti sconti primaverili) -->
                         <li class="nav-item ">
-                            <a class="nav-link dropdown-toggle" href="#" id="" data-bs-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Fai Acquisti</a>
-                            <div class="dropdown-menu w-100" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="#">Acquisti 1</a>
-                                <a class="dropdown-item" href="#">Action 2</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Acquisti</a>
+                            <div class="dropdown-menu w-100 " aria-labelledby="dropdownId">
+                                <div class="row row-cols-3 gx-sm-3 gx-md-3 gx-lg-2 px-lg-2 d-flex align-content-center justify-content-center justify-content-lg-start">
+                                    <!-- Card-1 - Giochi Scontati -->
+                                    <div class="col-sm-3 col-md-2 col-lg-2">
+                                        <div class="card">
+                                            <img class="img-fluid" src="./assets/img/playstation-store-golden-week-sale-spotlight.jpg" alt="Sconti Primaver">
+                                        </div>
+                                    </div>
+                                    <!-- Card-2 - Giochi Scontati -->
+                                    <div class="col-sm-3 col-md-2 col-lg-2">
+                                        <div class="card">
+                                            <img class="img-fluid" src="./assets/img/playstation-store-golden-week-sale-spotlight.jpg" alt="Sconti Primaver">
+                                        </div>
+                                    </div>
+                                    <!-- Card-3 - Giochi Scontati -->
+                                    <div class="col-sm-3 col-md-2 col-lg-2">
+                                        <div class="card">
+                                            <img class="img-fluid" src="./assets/img/playstation-store-golden-week-sale-spotlight.jpg" alt="Sconti Primavera">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </li>
-                        <!--  -->
+                        <!-- Supporto (card facebook)  -->
                         <li class="nav-item">
-                            <a class="nav-link dropdown-toggle" href="#" id="" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">Supporto</a>
-                            <div class="dropdown-menu w-100" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="#">Supporto 1</a>
-                                <a class="dropdown-item" href="#">Action 2</a>
+                            <div class="dropdown-menu w-100 " aria-labelledby="dropdownId">
+                                <div class="row row-cols-3 gx-sm-3 gx-md-3 gx-lg-2 px-lg-2 d-flex align-content-center justify-content-center justify-content-lg-start">
+                                    <!-- Card-1 - Social -->
+                                    <div class="col-sm-3 col-md-2 col-lg-2">
+                                        <div class="card">
+                                            <img class="img-fluid" src="./assets/img/facebook.jpg" alt="Social">
+                                        </div>
+                                    </div>
+                                    <!-- Card-2 - Social -->
+                                    <div class="col-sm-3 col-md-2 col-lg-2">
+                                        <div class="card">
+                                            <img class="img-fluid" src="./assets/img/facebook.jpg" alt="Social">
+                                        </div>
+                                    </div>
+                                    <!-- Card-3 - Social -->
+                                    <div class="col-sm-3 col-md-2 col-lg-2">
+                                        <div class="card">
+                                            <img class="img-fluid" src="./assets/img/facebook.jpg" alt="Social">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </li>
                     </ul>
-                    <!-- /.right_menu -->
-                    <ul class="right_menu navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link dropdown-toggle" href="#" id="" data-bs-toggle="dropdown"
+                    <!-- Menu a DX -->
+                    <ul class="right_menu navbar-nav d-flex align-content-center">
+                        <!-- Lista My Playstation -->
+                        <li class="nav-item mx-lg-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">My Playstation</a>
                             <div class="dropdown-menu w-100" aria-labelledby="dropdownId">
                                 <a class="dropdown-item" href="#">My Play 1</a>
-                                <a class="dropdown-item" href="#">Action 2</a>
+                                <a class="dropdown-item" href="#">My Play 2</a>
                             </div>
                         </li>
-                        <!-- /.nav-item -->
-                        <li class="nav-item">
+                        <!-- Pulsante Accedi -->
+                        <li class="nav-item mx-lg-2">
                             <a href="" class="btn btn-dark rounded-pill">Accedi</a>
                         </li>
-                        <!-- /.nav-item -->
-                        <li class="nav-item">
+                        <!-- Pulsante ricerca -->
+                        <li class="nav-item mx-lg-2 align-self-center">
                             <i class="fa-solid fa-search fa-fw"></i>
                         </li>
                     </ul>  
@@ -620,27 +728,27 @@
                 <div class="col-sm-12 col-md-10 offset-md-1 offset-lg-3 col-lg-6 text-sm-start text-md-center d-sm-flex flex-sm-column flex-md-row justify-content-md-between justify-content-lg-around">
                     <!-- 1°link footer  -->
                     <ul class="list_md p_xs">
-                        <li><a href="#">Link Footer n</a></li>
-                        <li><a href="#">Link Footer n</a></li>
-                        <li><a href="#">Link Footer n</a></li>
-                        <li><a href="#">Link Footer n</a></li>
-                        <li><a href="#">Link Footer n</a></li>
+                        <li class="pb_mid_rem"><a href="#">Link Footer n</a></li>
+                        <li class="pb_mid_rem"><a href="#">Link Footer n</a></li>
+                        <li class="pb_mid_rem"><a href="#">Link Footer n</a></li>
+                        <li class="pb_mid_rem"><a href="#">Link Footer n</a></li>
+                        <li class="pb_mid_rem"><a href="#">Link Footer n</a></li>
                     </ul>
                     <!-- 2°link footer  -->
                     <ul class="list_md p_xs">
-                        <li><a href="#">Link Footer n</a></li>
-                        <li><a href="#">Link Footer n</a></li>
-                        <li><a href="#">Link Footer n</a></li>
-                        <li><a href="#">Link Footer n</a></li>
-                        <li><a href="#">Link Footer n</a></li>
-                        <li><a href="#">Link Footer n</a></li>
-                        <li><a href="#">Link Footer n</a></li>
+                        <li class="pb_mid_rem"><a href="#">Link Footer n</a></li>
+                        <li class="pb_mid_rem"><a href="#">Link Footer n</a></li>
+                        <li class="pb_mid_rem"><a href="#">Link Footer n</a></li>
+                        <li class="pb_mid_rem"><a href="#">Link Footer n</a></li>
+                        <li class="pb_mid_rem"><a href="#">Link Footer n</a></li>
+                        <li class="pb_mid_rem"><a href="#">Link Footer n</a></li>
+                        <li class="pb_mid_rem"><a href="#">Link Footer n</a></li>
                     </ul>
                     <!-- 3°link footer  -->
                     <ul class="list_md p_xs">
-                        <li><a href="#">Link Footer n</a></li>
-                        <li><a href="#">Link Footer n</a></li>
-                        <li><a href="#">Link Footer n</a></li>
+                        <li class="pb_mid_rem"><a href="#">Link Footer n</a></li>
+                        <li class="pb_mid_rem"><a href="#">Link Footer n</a></li>
+                        <li class="pb_mid_rem"><a href="#">Link Footer n</a></li>
                     </ul>
                 </div>
                 <!-- Logo footer  -->
