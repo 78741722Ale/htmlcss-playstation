@@ -139,6 +139,7 @@ li > a {
 
 /*#region Media Queries */
 
+
 /*#region SM - CONCLUSA */
 @media screen and (max-width: 767.98px) {
   /* Aspect Ratio SM della HeroImage */
@@ -223,6 +224,12 @@ li > a {
     margin-bottom: 5%;
   }
 
+  /* Testo delle Cards playstation Item */
+  .item_text {
+    display: block;
+    font-size: 0.9rem;
+  }
+
   /* Titoli generici */
   .h1_md {
     font-size: 2.8rem;
@@ -302,7 +309,60 @@ li > a {
 
 /*#endregion Media Queries */
 
-/*#region Effetti */
+/*#region Effetti - COMPLETI */
 
+/* Effetti cards slider */
+
+.border_card_visible {
+  outline: 2px solid #0d6efd;
+  outline-offset: 3px;
+}
+
+.border_card:hover {
+  outline: 2px solid #0d6efd;
+  outline-offset: 3px;
+  /* border-color: #0d6efd; */
+}
+
+/* Effetti cards dispositivi Sony */
+
+.border_under_visible {
+  border-width: 0px 0px 5px 0px;
+  border-color: #0d6efd;
+  padding: 0.65rem;
+}
+
+.border_under {
+  border-width: 0px 0px 5px 0px;
+  border-color: transparent;
+  padding: 0.65rem;
+}
+
+.cons_item, 
+.item_text {
+  filter: opacity(50%);
+}
+
+.cons_item:hover {
+  filter: opacity(100%);
+}
+
+.border_under:hover {
+  border-color: #0d6efd;
+  filter: opacity(100%);
+}
+
+/* Bottoni Primari - effetto outline */
+.btn-primary:hover {
+  outline: 2px solid black;
+  outline-offset: 3px;
+  filter: opacity(100%);
+}
+
+/* Bottoni danger - effetto opposto */
+.btn-danger:hover {
+  outline: 2px solid white;
+  outline-offset: -5px;
+}
 
 /*#endregion*/
